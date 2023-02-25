@@ -1,20 +1,20 @@
 import { Link } from "react-router-dom"
 // import { ReactDOM } from "react";
 import { useState } from "react";
-import { Axios } from "axios";
+// import { Axios } from "axios";
 // const bcryptjs = require('bcryptjs');
 // const saltRounds = 10;
 
 
 const AdultLogin = () => {
     
-    const handleSubmit = () => {
+    const [selectedOption, setSelectedOption] = useState("");
 
-        
-    }
-
-
-
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        console.log(selectedOption);
+      }
+      
     return (
         <><nav>
 
@@ -43,12 +43,14 @@ const AdultLogin = () => {
                 <label>Child's Age </label>
                 <input type='number' name="age" />
 
-                {/* <label></label>
-                <input type='number' />
+                <label>Child's Grade</label>
+                <select id="select-option" value={selectedOption} onChange={(event) => setSelectedOption(event.target.value)}>
+                    <option value="">--Please choose an option--</option>
+                    <option value="Toddler">Toddler</option>
+                    <option value="Pre-k">Pre-K</option>
+                    <option value="Kindgergarten">Kindergarten</option>
+                </select>
 
-                <label></label>
-                <input type='text' />
- */}
                 <button type="submit">Sign Up</button>
 
             </form>
