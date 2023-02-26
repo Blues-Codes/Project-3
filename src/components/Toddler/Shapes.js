@@ -3,7 +3,7 @@
 const Shapes = () => {
     return (
 
-        <div>
+        <div className="background">
             <h2>Shapes box puzzle</h2>
         </div>
     )

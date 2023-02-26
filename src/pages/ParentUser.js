@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const ParentUser =() => {
 
     return (
-        <div>
+        <div className="background">
             {/* // //  "Welcome {parent name}!"
             
             // "Your child, {Child name}, has played {Played Game List}"

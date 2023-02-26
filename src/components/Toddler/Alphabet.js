@@ -3,7 +3,7 @@
 const Alphabet = () => {
     return(
 
-        <div>
+        <div className="background">
             <h1>Alphabet</h1>
         </div>
     )

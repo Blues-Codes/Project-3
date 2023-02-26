@@ -6,7 +6,7 @@ const Error = () => {
 
   return (
 
-    <div>
+    <div className="background">
         <h1>Error page </h1>
         <Link path="/"/>
 

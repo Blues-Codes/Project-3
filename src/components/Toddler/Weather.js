@@ -5,7 +5,7 @@ const Weather = () => {
 
     return (
 
-        <div>
+        <div className="background">
 <h2> Weather</h2>
 
 {/* "What's the weather like outside today?"

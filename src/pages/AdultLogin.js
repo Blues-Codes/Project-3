@@ -25,7 +25,7 @@ const AdultLogin = () => {
             <Link to={'/login'}>Login</Link>
 
         </nav>
-            <div classname="login">
+            <div className="background" id="id">
             <form onSubmit={handleSubmit}>
 
                 <label>Parent Name</label>

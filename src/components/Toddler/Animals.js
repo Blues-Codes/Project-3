@@ -4,7 +4,7 @@ const Animals = () => {
 
     return (
 
-        <div>
+        <div className="background">
             <h1>Animals</h1>
         </div>
     )

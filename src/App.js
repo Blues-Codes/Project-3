@@ -8,6 +8,7 @@ import About from './pages/About';
 import Login from './pages/AdultLogin';
 import AllGames from './components/AllGames';
 import Home from './pages/Home';
+import Background from './components/Background';
 
 function App() {
   return (

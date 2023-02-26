@@ -4,7 +4,7 @@ const Painting = () => {
 
     return (
 
-        <div> 
+        <div className="background"> 
             <h1> Painting game </h1>
         </div>
     )

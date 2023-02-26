@@ -8,7 +8,7 @@ const Navbar = () =>{
 
     return (
 
-        <nav>
+        <nav className="navigation">
             <Link>Home</Link>
             <Link>About</Link>
             <Link>All Games</Link>

@@ -6,7 +6,7 @@ const saltRounds = 10;
 const Home = () => {
 
     return (
-        <div>
+        <div className="background">
 
             <h1>Home</h1>
 

@@ -1,21 +1,37 @@
 import { Link } from "react-router-dom";
+import React, { useState } from 'react';
 
 
-const ChildLogin = () => {
-
-    return (
-
-        <div>
-            <h1> Child Login</h1>
-
-        
-        </div>
-
-    )
-
-
-}
-
+const ChildLogin = ({onLetterClick}) => {
+        const letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+        const [selectedLetter, setSelectedLetter] = useState(null);
+      
+        const handleLetterClick = (letter) => {
+          setSelectedLetter(letter);
+        };
+      
+        const SelectedLetter = ({ letter }) => {
+          return <div className="selected-letter">{letter}</div>;
+        };
+      
+        return (
+          <div className="keyboard">
+            {letters.map((letter) => (
+              <LetterBlock key={letter} letter={letter} onClick={handleLetterClick} />
+            ))}
+            {selectedLetter && <SelectedLetter letter={selectedLetter} />}
+          </div>
+        );
+      };
+      
+      const LetterBlock = ({ letter, onClick }) => {
+        return (
+          <div className="letter-block" onClick={() => onClick(letter)}>
+            {letter}
+          </div>
+        );
+      };
+      
 // "Hi there!"
 // "Do you want to some play some games with us? or do you just want to play on your own?"
 // {Option for guides games or Free Play} -- Buttons? 
@@ -32,3 +48,6 @@ const ChildLogin = () => {
 // skin Tones,
 // clothes, 
 // shoes
+
+
+export default ChildLogin;
