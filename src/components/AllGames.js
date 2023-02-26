@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 
-
+// {Games list}
 
 
 const AllGames = () =>{
